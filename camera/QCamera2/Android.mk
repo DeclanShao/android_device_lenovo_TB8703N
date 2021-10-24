@@ -40,7 +40,7 @@ LOCAL_SRC_FILES += \
         HAL/QCameraParametersIntf.cpp \
         HAL/QCameraThermalAdapter.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-variable
+LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-variable -Wno-compound-token-split-by-macro
 
 # System header file path prefix
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
