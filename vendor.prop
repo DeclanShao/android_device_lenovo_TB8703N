@@ -1,0 +1,6 @@
+#
+# vendor.prop for lenovo_tb8703n
+#
+
+# Bluetooth
+bluetooth.device.default_name=Lenovo TB8703N
