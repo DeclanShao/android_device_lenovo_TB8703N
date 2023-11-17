@@ -23,4 +23,4 @@ PRODUCT_PACKAGES += \
     camera.msm8953 
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/lenovo/lenovo/TB8703N-vendor.mk)
+$(call inherit-product, vendor/lenovo/TB8703N/TB8703N-vendor.mk)
