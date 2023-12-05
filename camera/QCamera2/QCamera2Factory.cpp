@@ -32,6 +32,7 @@
 // System dependencies
 #include <stdlib.h>
 #include <utils/Errors.h>
+#include <cutils/properties.h>
 
 // Camera dependencies
 #ifdef QCAMERA_HAL1_SUPPORT
