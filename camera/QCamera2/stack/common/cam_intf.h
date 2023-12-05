@@ -567,7 +567,7 @@ typedef struct {
 } cam_stream_img_prop_t;
 
 typedef struct {
-    uint8_t enableStream; /*0 – stop and 1-start */
+    uint8_t enableStream; /*0 Â– stop and 1-start */
 } cam_request_frames;
 
 typedef struct {
@@ -663,8 +663,8 @@ typedef struct {
     ((NULL != TABLE_PTR) ? \
     ((TABLE_PTR->data.member_variable_##META_ID[ 0 ] = DATA), \
     (TABLE_PTR->is_valid[META_ID] = 1), (0)) : \
-    ((LOGE("Unable to set metadata TABLE_PTR:%p META_ID:%d", \
-            TABLE_PTR, META_ID)), (-1))) \
+    (({LOGE("Unable to set metadata TABLE_PTR:%p META_ID:%d", \
+            TABLE_PTR, META_ID)}), (-1))) \
 
 #define ADD_SET_PARAM_ARRAY_TO_BATCH(TABLE_PTR, META_ID, PDATA, COUNT, RCOUNT) \
 { \
