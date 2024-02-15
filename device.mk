@@ -22,5 +22,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     camera.msm8953 
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lenovo-msm8953-libperfmgr \
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/lenovo/TB8703N/TB8703N-vendor.mk)
