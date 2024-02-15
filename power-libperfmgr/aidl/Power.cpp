@@ -90,6 +90,10 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     ATRACE_INT(toString(type).c_str(), enabled);
     PowerSessionManager::getInstance()->updateHintMode(toString(type), enabled);
     switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
+			::android::base::WriteStringToFile(enabled ? "1" : "0",
+				"/sys/android_touch/SMWP", true);
+            break;
         case Mode::LOW_POWER:
             break;
         case Mode::SUSTAINED_PERFORMANCE:
