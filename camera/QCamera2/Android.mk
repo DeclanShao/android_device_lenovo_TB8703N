@@ -25,7 +25,7 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-variable -Wno-compound-token-split-by-macro
+LOCAL_CFLAGS := -Wall -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-compound-token-split-by-macro -Wno-unused-but-set-variable -Wno-string-concatenation
 
 #HAL 1.0 source
 
