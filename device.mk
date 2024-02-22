@@ -16,9 +16,7 @@ TARGET_SCREEN_WIDTH := 1200
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
+    $(LOCAL_PATH)
 
 # Camera
 PRODUCT_PACKAGES += \
